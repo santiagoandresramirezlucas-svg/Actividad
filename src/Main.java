@@ -24,21 +24,24 @@ public class Main{
         }
 
         //----------Ejerccio 2----------//
-        Scanner lector=new Scanner(System.in);
+    Scanner lector=new Scanner(System.in);
+        int intentos;
+        int al;
         System.out.println("Adivinar un número aleatorio ente 1 a 10");
         System.out.println("Tiene tres oportunidades para adivinar");
-    int intentos;
-    int al= (int)(Math.random() * 10 +1);
+        al= (int) (Math.random() * 10 +1);
     for(int i =1; i <=3; i++ ){
+
         System.out.println("Intento" + i);
         intentos= lector.nextInt();
+
         if(intentos==al){
             System.out.println("Adivinó el número");
             break;
         } else if (intentos<al) {
-            System.out.println("El numero a adivinar es mayor");
+            System.out.println("El número a adivinar es mayor");
         } else{
-            System.out.println("El numero a adivinar es menor");
+            System.out.println("El número a adivinar es menor");
         }
         if(i == 3){
             System.out.println("Perdió");
