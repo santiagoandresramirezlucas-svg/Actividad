@@ -1,8 +1,6 @@
-import java.sql.SQLOutput;
 import java.util.Scanner;
 public class Main{
     public static void main(String[] args){
-
         int d1 =0;
         int d2 =1;
         int s1=0;
@@ -25,13 +23,12 @@ public class Main{
             System.out.println("Empate\n");
         }
 
-        //----------Ejerccio 2----------
+        //----------Ejerccio 2----------//
         Scanner lector=new Scanner(System.in);
         System.out.println("Adivinar un número aleatorio ente 1 a 10");
         System.out.println("Tiene tres oportunidades para adivinar");
     int intentos;
     int al= (int)(Math.random() * 10 +1);
-        System.out.println(al);
     for(int i =1; i <=3; i++ ){
         System.out.println("Intento" + i);
         intentos= lector.nextInt();
